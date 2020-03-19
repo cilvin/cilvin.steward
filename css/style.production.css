@@ -1,0 +1,673 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+/*
+Colors used
+
+Text-color (dark gray): #21222D
+background-color (light gray): #B0B0B2
+
+*/
+:root {
+  --primary-color: #357b70;
+  --primary-color-darker: #16342f;
+  --primary-color-lighter: #5db9ab;
+  --secondary-color: #e0b354;
+  --third-color: #2b2b2b;
+  --fourth-color: #21222d;
+  --fith-color: #05676e;
+  --sixth-color: #489c79;
+  --seventh-color: #d3d3d3;
+  --eigth-color: #ffffff;
+  --ninth-color: #edc655;
+  --tenth-color: #f76414;
+  --logo-color: #65b747;
+  --black: #000;
+  --primary-font-weight: 700;
+  --normal-padding: 10px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.content-details a {
+  color: white;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--fourth-color);
+  position: relative;
+}
+
+.aboutText {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+h1 {
+  font-family: "Cinzel";
+  font-size: 55px;
+  font-weight: 300;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  -webkit-animation: type 3s steps(24), blink-caret 0.75s step-end infinite;
+  animation: type 3s steps(24), blink-caret 0.75s step-end infinite;
+  border-right: 4px solid black;
+  white-space: nowrap;
+  width: 22ch;
+  color: black;
+  margin-top: -35px;
+  width: 55%;
+  height: auto;
+  
+}
+
+#SD {
+  font-family: "Cinzel";
+  position: absolute;
+  top: 215px;
+  left: 450px;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: var(--primary-font-weight);
+  font-family: "Cinzel";
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--primary-font-weight);
+  font-family: "Cinzel";
+  display: inline;
+  margin: 10px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: var(--primary-font-weight);
+  font-family: "Nanum Gothic";
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: var(--primary-font-weight);
+  font-family: "Nanum Gothic";
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-image: url("/home/cilvin/Desktop/Learntocode/Cilvin-Webiste/img/tropical.jpg");
+  background-color: white;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#letter {
+  position: absolute;
+  width: 175px;
+  height: 200px;
+  top: 100px;
+  left: 175px;
+}
+
+.aboutme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+#device {
+  width: 100%;
+  max-width: 883px;
+  height: auto;
+}
+
+.aboutSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--logo-color);
+  width: 100%;
+  length: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.aboutText {
+  text-align: center;
+}
+
+.portrait {
+  -ms-flex-line-pack: center;
+  align-content: center;
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-inner {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 3px;
+}
+
+.contact-wrapper::after {
+  content: "";
+  display: block;
+}
+
+.page-footer,
+.contact-wrapper::after {
+  height: 90px;
+}
+
+#med {
+  height: 30px;
+  Width: 30px;
+}
+
+.profile::after {
+  content: "";
+  display: block;
+}
+
+.page-footer,
+.profile::after {
+  height: 90px;
+}
+
+.profile__portrait {
+  float: none;
+  margin-right: 40px;
+  width: 175px;
+  height: auto;
+  border-radius: 50%;
+  background-color: var(--logo-color);
+}
+
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  border-top: 2px solid black;
+}
+
+.page-footer__item {
+  width: 30%;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: var(--normal-padding);
+  border-bottom: 2px solid black;
+}
+
+.page-header__item {
+  min-width: 0;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
+  font-weight: 400;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
+}
+
+#logoc {
+  height: 55px;
+  width: 65px;
+  margin-left: 25px;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: var(--black);
+  font-size: 15px;
+  font-family: "Nanum Gothic";
+  font-weight: 200;
+}
+
+.button {
+  font-family: "Nanum Gothic";
+  text-decoration: none;
+  background-color: var(--eigth-color);
+  color: var(--black);
+  border-radius: 35px;
+  padding: 10px 15px 10px 15px;
+  border: 2.5px solid var(--logo-color);
+  -webkit-transition: 0.2s background-color;
+  -o-transition: 0.2s background-color;
+  transition: 0.2s background-color;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--eigth-color);
+  background-color: var(--logo-color);
+}
+
+#workbtn {
+  color: var(--logo-color);
+}
+
+#contactbtn {
+  color: var(--logo-color);
+}
+
+#homebtn {
+  -webkit-transition: 0.2s color;
+  -o-transition: 0.2s color;
+  transition: 0.2s color;
+}
+
+#homebtn:hover,
+#homebtn:focus {
+  color: var(--logo-color);
+}
+
+#rsbtn {
+  -webkit-transition: 0.2s color;
+  -o-transition: 0.2s color;
+  transition: 0.2s color;
+  border: 2.5px solid black;
+  border-radius: 35px;
+  padding: 10px 15px 10px 15px;
+  width: 8%;
+  text-align: center;
+}
+
+.rbtn {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+#rsbtn:hover,
+#rsbtn:focus {
+  color: white;
+}
+
+#pbtn:hover, #pbtn:focus {
+  color: var(--logo-color);
+
+}
+
+#workbtn:hover,
+#workbtn:focus,
+#contactbtn:hover,
+#contactbtn:focus {
+  color: var(--eigth-color);
+}
+
+/* Styling CSS grid */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  /* Define Auto Row size */
+  grid-auto-rows: 400px;
+  /*Define our columns */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 1em;
+}
+
+.grid__item {
+  padding: 5px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+ 
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+  border-radius: 20px;
+}
+
+.content-image {
+  width: 100%;
+  border-radius: 20px;
+  height: 300px;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 1em;
+}
+.content-details .fadeIn-top  {
+  overflow: scroll;
+}
+
+.fadeIn-top {
+  top: 20%;
+}
+
+#angular {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#vue {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#react {
+  height: 100px;
+  width: 1px;
+  margin-right: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#jquery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#moment {
+  height: 200px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.techList {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.code {
+  margin: 100px;
+}
+
+.website {
+  margin: 100px;
+}
+
+.image {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+}
+
+#workitm {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .profile h1 {
+    font-size: 250%;
+  }
+
+  #letter {
+    size: 250%;
+  }
+}
+@-webkit-keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 24ch;
+  }
+}
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  100% {
+    width: 24ch;
+  }
+}
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@media (max-width: 700px) {
+  .overlay {
+    height: 500px;
+    width: 400px;
+  }
+
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  .overlay {
+    height: 500px;
+    width: 550px;
+  }
+
+  .image {
+    width: 550px;
+    height: 400px;
+  }
+}
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 800px) and (max-width: 1100px) {
+  .grid {
+    -ms-grid-columns: 1fr 1em 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+}
+
+@media all and (max-width: 883px) {
+  .aboutme {
+    width: 100%;
+    height: auto;
+ 
+  }
+ }
+
+ @media all and (max-width: 517px) {
+  h1 {
+ display: none;
+  }
+ }
+ 
